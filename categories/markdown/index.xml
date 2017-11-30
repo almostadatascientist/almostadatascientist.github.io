@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on A Data Science Odyssey.</title>
+    <link>/categories/markdown/</link>
+    <description>Recent content in Markdown on A Data Science Odyssey.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2017 Jean Souza</copyright>
+    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Como criar um blog em R utilizando blogdown &#43; Hugo</title>
+      <link>/blog/como-criar-um-blog-em-r-utilizando-blogdown-hugo/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/como-criar-um-blog-em-r-utilizando-blogdown-hugo/</guid>
+      <description>Como este é o meu primeiro artigo no blog, não poderia ser diferente, o tópico é: Como criar um blog! Incrível não?
+Para executar com êxito todas as etapas desse post, é preciso que você possua uma conta no GitHub, além de possuir o R + Rstudio instalados na sua máquina.
+O sistema operacional que uso é o Antergos, que é uma distribuição baseada no maravilhoso Arch Linux. Se você estiver utilizando alguma outra distro Linux, creio que seja apenas copiar e colar os trechos de código e ser feliz.</description>
+    </item>
+    
+  </channel>
+</rss>

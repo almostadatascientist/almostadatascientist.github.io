@@ -1,0 +1,109 @@
+---
+title: Como criar um blog em R utilizando blogdown + Hugo
+author: Jean Souza
+date: '2017-11-29'
+slug: como-criar-um-blog-em-r-utilizando-blogdown-hugo
+categories: [blogging, markdown, r]
+tags: [blogging, markdown, r]
+---
+
+Como este é o meu primeiro artigo no blog, não poderia ser diferente, o tópico é: Como criar um blog! Incrível não? 
+
+Para executar com êxito todas as etapas desse post, é preciso que você possua uma conta no GitHub, além de possuir o R + Rstudio instalados na sua máquina. 
+
+O sistema operacional que uso é o Antergos, que é uma distribuição baseada no maravilhoso Arch Linux. Se você estiver utilizando alguma outra distro Linux, creio que seja apenas copiar e colar os trechos de código e ser feliz. Se não, também não precisa se desesperar, é só ajustar os comandos para o seu sistema, no big deal.
+
+Para quem ainda não conhece o blogdown, recomendo a leitura da [documentação oficial](https://bookdown.org/yihui/blogdown/). Já os temas utilizados neste e no seu futuro blog, são disponibilizados pelo [Hugo](https://gohugo.io/).
+
+Não é necessário conhecimento prévio em nenhuma das tecnologias supracitadas :)
+
+Ok, vamos ao que viemos.
+
+#Configuração dos repositórios no GitHub.
+
+Você precisará criar 2 repositórios no GitHub: Um com o nome do seu usuário, que será utilizado na criação da sua GitHub Page (onde o seu blog será publicado) e outro onde você realizará a configuração do blog através do hugo. Sim, essa parte é chata, principalmente a parte dos commits, mas rápidinho você se acostumará e é um bom hábito para se ter.
+
+Primeiro, entre na sua conta do GitHub e crie um repositório com um nome que te agrade:
+
+![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_006.bmp)
+Feito isso, acesse-o. Clique no botão Clone or Download e copie a URL do seu repo:
+
+![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_007.bmp)
+
+Crie ou navegue até um diretório de sua preferência, clone o repositório. Neste artigo, criei um diretório chamado github na minha home. 
+
+![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_008.bmp)
+
+Pronto, bem tranquilo. Agora, repita esses mesmos passos para criar o segundo repositório. A diferença é que este repo deve possuir o seguinte nome _(seuusername.github.io)_ e ter a opção _Initialize this repository with a README_ desmarcada. Com isso, a sua GitHub Page também será configura automaticamente, porém, não acesse-a ainda pois receberá um erro, pois ainda não existe nada em seu master branch.
+
+Com tudo isso feito, abra o Rstudio e siga o roteiro a seguir.
+
+#Rstudio: where the fun begins.
+```{r include=FALSE}
+knitr::opts_knit$set(root.dir = '/home/jean/github/a-data-science-odyssey/')
+#knitr::opts_knit$set(root.dir = '/home/jean/')
+```
+
+Instalação do package blogdown, que será o responsável por nos ajudar com o setup do blog, criação de conteúdo etc:
+
+```{r eval=F}
+install.packages("blogdown")
+```
+
+Carregue o blogdown e instale o hugo logo em seguida:
+
+```{r message=F, echo=T, eval=F}
+library(blogdown)
+install_hugo()
+```
+Agora é que vem a mágica. Para criar um blog, é só chamar a função new_site do blogdown e passar valores para os parâmetros <span style="color:red">dir</span> (diretório onde os arquivos do hugo serão inseridos), <span style="color:red">theme</span> (tema do hugo que você escolheu.) e <span style="color:red">format</span> (específica qual será a estrutura do arquivo de configuração do seu blog).
+
+```{r eval=F, echo=T}
+new_site(dir = 'github/a-data-science-odyssey', 
+         theme = 'mtn/cocoa-eh-hugo-theme',
+         format = 'toml')
+```
+
+Se tudo funcionou, você provavelmente recebeu uma mensagem similar a essa:
+
+```{r eval=F, echo=T}
+'Serving the directory /home/jean/github/a-data-science-odyssey/github/asssss 
+at http://127.0.0.1:6459
+To stop the server, run servr::daemon_stop("140656240") 
+or restart your R session'
+```
+
+Acesse o endereço disponibilizado (http://127.0.0.1:port) e veja o seu recém criado blog. Ainda está com o template original, sem nenhuma customização, somente com alguns exemplos default. O que nos leva ao próximo passo: configuração do arquivo _config.toml._
+
+Ele se encontra na raíz do diretório onde o website foi configurado (se esqueceu o caminho do diretório, consulte a função new_site nas etapas anteriores :)). Abra-o com seu editor de texto favorito, e altere os campos conforme abaixo:
+
+![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_010.bmp)
+
+Aqui, os atributos relevantes são o <span style="color:red">baseurl</span> (que apontará para a sua GitHub Page), <span style="color:red">publishDir</span> (diretório do seu repositório clonado, aqui é onde os arquivos necessários para a renderização do seu site serão colocados.) e <span style="color:red">title</span> (título do seu blog, seja criativo).
+
+#Seu primeiro post! 
+
+Muito simples, basta chamar a função <span style="color:red">new_post</span> e passar os parâmetros necessários: <span style="color:red">title</span> é autoexplicativo, <span style="color:red">subdir</span> (é onde o arquivo com o conteúdo do seu post será salvo.) e <span style="color:red">ext</span> (é a extensão do arquivo, no nosso caso, .Rmd refere-se ao R Markdown. Poderia ser .md também, para utilizar markdown simples).
+
+```{r message=F, warning=F, eval=F, echo=T}
+new_post(title="Como criar um blog em R utilizando blogdown + Hugo", 
+         subdir = "blog/", 
+         ext = ".Rmd")
+```
+
+Um arquivo .Rmd abrirá em uma nova aba no seu Rstudio, similar a este: 
+
+![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_011.bmp)
+
+Basta você começar a escrever o seu artigo e salvar o arquivo. Automaticamente, o blogdown dará um refresh no hugo, publicando o seu post. 
+
+Ainda não acabou! O seu blog está disponível somente na sua máquina. Para publicarmos isso online, é necessário precisamos dar um commit nos arquivos do nosso site para o repositório .github.io. 
+
+#Add, commit e push: Seus melhores amigos.
+
+Isso se tornará uma rotina constante caso você venha a postar muitos artigos no teu blog, então, habitue-se. 
+
+Vamos lá, acesse o diretório .github.io que você clonou anteriormente e siga os passos abaixo:
+
+![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_010.bmp)
+

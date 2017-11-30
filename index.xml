@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A Data Science Odyssey.</title>
+    <link>/</link>
+    <description>Recent content on A Data Science Odyssey.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2017 Jean Souza</copyright>
+    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Resume</title>
+      <link>/resume/</link>
+      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/</guid>
+      <description>Hold tight! Ainda estou trabalhando no meu resume :)</description>
+    </item>
+    
+    <item>
+      <title>Como criar um blog em R utilizando blogdown &#43; Hugo</title>
+      <link>/blog/como-criar-um-blog-em-r-utilizando-blogdown-hugo/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/como-criar-um-blog-em-r-utilizando-blogdown-hugo/</guid>
+      <description>Como este é o meu primeiro artigo no blog, não poderia ser diferente, o tópico é: Como criar um blog! Incrível não?
+Para executar com êxito todas as etapas desse post, é preciso que você possua uma conta no GitHub, além de possuir o R + Rstudio instalados na sua máquina.
+O sistema operacional que uso é o Antergos, que é uma distribuição baseada no maravilhoso Arch Linux. Se você estiver utilizando alguma outra distro Linux, creio que seja apenas copiar e colar os trechos de código e ser feliz.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Calm down! I&amp;rsquo;m working on it.</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/</guid>
+      <description>Hey! Bem-vindo a esse antro.. ops, recinto de conhecimento. Dá uma olhada nos artigos:</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/license/</guid>
+      <description>You can use this page to put a license on the contents of your blog, like so:
+ The MIT License (MIT)
+Copyright &amp;copy; 2015 Nishanth Shanmughamnishanth.gerrard@gmail.com
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</description>
+    </item>
+    
+  </channel>
+</rss>
