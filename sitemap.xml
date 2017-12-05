@@ -30,13 +30,13 @@
   </url>
   
   <url>
-    <loc>/tags/blogging/</loc>
+    <loc>/categories/blogging/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/blogging/</loc>
+    <loc>/tags/blogging/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -56,25 +56,25 @@
   </url>
   
   <url>
-    <loc>/tags/markdown/</loc>
-    <lastmod>2017-11-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/markdown/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>/tags/markdown/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/r/</loc>
+    <lastmod>2017-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
