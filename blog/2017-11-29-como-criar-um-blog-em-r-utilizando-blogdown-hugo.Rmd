@@ -111,4 +111,6 @@ Vamos lá, acesse o diretório .github.io que você clonou anteriormente e siga 
 
 Insira seu usuário e senha do GitHub e confirme. Após isso, acesse o endereço _`https://seuusername.github.io`_ e voilá, seu blog ja estará disponível na internet (assim como este aqui haha).
 
-Caso você 
+Caso você possua alguma dúvida, teve problemas ao seguir o artigo ou quer simplesmente dar um feedback referente ao post, me mande um e-mail (jeanccarlos.ds@gmail.com), responderei assim que puder. Estou trabalhando na seção de comentários com Disqus ainda. 
+
+Obrigado! 
