@@ -26,6 +26,7 @@ Você precisará criar 2 repositórios no GitHub: Um com o nome do seu usuário,
 Primeiro, entre na sua conta do GitHub e crie um repositório com um nome que te agrade:
 
 ![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_006.bmp)
+
 Feito isso, acesse-o. Clique no botão Clone or Download e copie a URL do seu repo:
 
 ![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_007.bmp)
@@ -56,6 +57,7 @@ Carregue o blogdown e instale o hugo logo em seguida:
 library(blogdown)
 install_hugo()
 ```
+
 Agora é que vem a mágica. Para criar um blog, é só chamar a função new_site do blogdown e passar valores para os parâmetros <span style="color:red">dir</span> (diretório onde os arquivos do hugo serão inseridos), <span style="color:red">theme</span> (tema do hugo que você escolheu.) e <span style="color:red">format</span> (específica qual será a estrutura do arquivo de configuração do seu blog).
 
 ```{r eval=F, echo=T}
@@ -107,3 +109,6 @@ Vamos lá, acesse o diretório .github.io que você clonou anteriormente e siga 
 
 ![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_012.bmp)
 
+Insira seu usuário e senha do GitHub e confirme. Após isso, acesse o endereço _`https://seuusername.github.io`_ e voilá, seu blog ja estará disponível na internet (assim como este aqui haha).
+
+Caso você 
