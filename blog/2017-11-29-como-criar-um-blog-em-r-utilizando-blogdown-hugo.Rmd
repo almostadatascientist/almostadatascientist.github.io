@@ -105,5 +105,5 @@ Isso se tornará uma rotina constante caso você venha a postar muitos artigos n
 
 Vamos lá, acesse o diretório .github.io que você clonou anteriormente e siga os passos abaixo:
 
-![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_011.bmp)
+![](/img/como-criar-um-blog-em-r-utilizando-blogdown-hugo/selecao_012.bmp)
 
